@@ -71,6 +71,7 @@ namespace k03_Operatorler
 
             var sonuc1 = (3 == 3) && (4 != 3);//true
             var sonuc2 = ("serdar" == "ozturk") || (1 == 3); //false
+           
 
 
 
