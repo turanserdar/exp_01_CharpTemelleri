@@ -11,9 +11,17 @@ namespace k04_YasamDongusu
     
     public partial class YasamDongusu : Form
     {
+        int globalDegisken= 100;
         public YasamDongusu()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            globalDegisken += 5;
+            txtDeger.Text = globalDegisken.ToString();
+
         }
     }
 }

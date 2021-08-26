@@ -8,10 +8,10 @@ namespace k03_Operatorler
         {
 
             ////Aritmetik Operatorler
-            ///* 
+            ///*    
             // * + toplama sadece bunu hep string hem sayisal islemlerde  kullanabilir
             // * = sagdaki degeri soldaki degiskene atar.
-            // * - cikarma
+            // * - cikarma          
             // * * carpma
             // * / bolme
             // * % mod alma
@@ -62,12 +62,12 @@ namespace k03_Operatorler
 
             //*/
 
-            //var esitMi = 3 == 2;//false
+            //var esitMi = 3 == 2;//false       
             //var buyukEsitMi = 50 >= 30; //true
 
             ////Mantiksal Operatorler
             ////&& and Karsilastirma sonuclarinin her birinin true olmasini ister 
-            ////|| (pipe isareti) or karsilastirma sonuclarindan herhangi birinin true olmasi sonucunda calisir.
+            ////|| (pipe isareti) or karsilastirma son  uclarindan herhangi birinin true olmasi sonucunda calisir.
 
             //var sonuc1 = (3 == 3) && (4 != 3);//true
             //var sonuc2 = ("serdar" == "ozturk") || (1 == 3); //false
@@ -85,7 +85,7 @@ namespace k03_Operatorler
             //var toplaminkaresi = (intsayi1 + intsayi2) * (intsayi1 + intsayi2);
             //Console.WriteLine(toplaminkaresi);
 
-            // hocanin yaptigi
+            // hocanin yaptigi  
 
             //Console.WriteLine("Birinci sayiyi giriniz");
             //var girilensayi1 = Console.ReadLine();
@@ -97,7 +97,7 @@ namespace k03_Operatorler
 
             //var toplam = sayi1 + sayi2;
 
-            //var karesi = toplam + toplam;
+            //var karesi = toplam + toplam; 
 
             //Console.WriteLine($"Toplamlarinin karesi={karesi}");
 
@@ -180,22 +180,26 @@ namespace k03_Operatorler
             //Console.WriteLine(ad + "" + soyad + "@" + uzanti + ".com");//bu sekilde de stringleri birlestirebiliriz
 
             //Escape Karakterler 
-            var metin = "benim adim 'nur' soyadim 'ozturk' dur.    ";
+            //var metin = "benim adim 'nur' soyadim 'ozturk' dur.    ";
 
-            var siir = "Sair demiski:\"Yasayalim!\" ";
+            //var siir = "Sair demiski:\"Yasayalim!\" ";
 
 
-            Console.WriteLine(metin);
+            //Console.WriteLine(metin);
+            //Console.WriteLine(siir);
+
+            //var siir2 = "Duydum ki bizi bırakmaya azmediyorsun, etme./n Başka bir yar, başka bir dosta meylediyorsun, etme./n Sen yadeller dünyasında ne arıyorsun yabancı? Hangi hasta gönüllüyü kastediyorsun, etme.";
+
+
+            //var metin = "'leyla' ne haber . 'leyla' ne haber ";
+            //Console.WriteLine(metin);
+
+            //var metin = " \"leyla\" ne haber . leyla ne haber ";
+
+            //Console.WriteLine(metin);
+
+            var siir = "Duydum ki bizi bırakmaya azmediyorsun, etme. \n Başka bir yar, başka bir dosta meylediyorsun, etme.\nSen yadeller dünyasında ne arıyorsun yabancı.\nHangi hasta gönüllüyü kastediyorsun, etme.";
             Console.WriteLine(siir);
-
-            var siir2 = "Duydum ki bizi bırakmaya azmediyorsun, etme./n Başka bir yar, başka bir dosta meylediyorsun, etme./n Sen yadeller dünyasında ne arıyorsun yabancı? Hangi hasta gönüllüyü kastediyorsun, etme.";
-
-
-
-
-
-
-
         }
     }
 }
