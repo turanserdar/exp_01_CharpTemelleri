@@ -53,8 +53,12 @@ namespace k05_HataAyiklama
 
             } catch (Exception ex) // exception hatanin turu sinifinin adi, ex de degiskenin adi. ex hatasi olan degiskenin veri tipi exception. int gibi sistemde hatalari tanimlayan veri tipi exception'dir. Exception hepsini kapsar
             {
-                MessageBox.Show("Hata olustu.");
+                //MessageBox.Show("Hata olustu."+ex.Message);
+                throw new Exception("Karakter girisi yapilamaz"); // Kendi istedigim exception hata mesajini gosterme // Run time hatasi gibi unhandled bir hata sistem disi gozukecek bir hata veriyor
+
+
             }// catch yaptigimiz icin proje calismaya devam edebilir
+
         }
     }
 }
