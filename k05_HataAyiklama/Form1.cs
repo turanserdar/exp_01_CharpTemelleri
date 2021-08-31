@@ -24,7 +24,7 @@ namespace k05_HataAyiklama
 
         private void btnHesapla_Click(object sender, EventArgs e)
         {
-
+            //Disaridan alinan sayinin karesini gosterme
             //try ve catch hata yakalama mekanizmasidir
             //try
             //{
