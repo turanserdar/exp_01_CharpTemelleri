@@ -35,34 +35,34 @@ namespace K06_KararYapilari
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //var vizeDeger = txtVize.Text;
-            //var vize = Convert.ToDouble(vizeDeger);
+            var vizeDeger = txtVize.Text;
+            var vize = Convert.ToDouble(vizeDeger);
 
-            //var finalDeger = txtFinal.Text;
-            //var final = Convert.ToDouble(vizeDeger);
-            //var ortalama = vize * 0.3 + final * 0.7;
+            var finalDeger = txtFinal.Text;
+            var final = Convert.ToDouble(vizeDeger);
+            var ortalama = vize * 0.3 + final * 0.7;
 
 
-            //if (ortalama >= 0 && ortalama < 30)
-            //{
-            //    MessageBox.Show("FF/KALDI" + $" ortalamasi:" + ortalama);
-            //}
-            //else if (ortalama >= 30 && ortalama < 50)
-            //{
-            //    MessageBox.Show("DD/KALDI" + $" Ortalamasi:" + ortalama);
-            //}
-            //else if (ortalama >= 50 && ortalama < 60)
-            //{
-            //    MessageBox.Show("CC/GECTI" + $" Ortalamasi:" + ortalama);
-            //}
-            //else if (ortalama >= 60 && ortalama < 85)
-            //{
-            //    MessageBox.Show("BA/GECTI" + $" Ortalamasi:" + ortalama);
-            //}
-            //else if (ortalama > 85)
-            //{
-            //    MessageBox.Show("AA/GECTI" + $" Ortalamasi:" + ortalama);
-            //}
+            if (ortalama >= 0 && ortalama < 30)
+            {
+                MessageBox.Show("FF/KALDI" + $" ortalamasi:" + ortalama);
+            }
+            else if (ortalama >= 30 && ortalama < 50)
+            {
+                MessageBox.Show("DD/KALDI" + $" Ortalamasi:" + ortalama);
+            }
+            else if (ortalama >= 50 && ortalama < 60)
+            {
+                MessageBox.Show("CC/GECTI" + $" Ortalamasi:" + ortalama);
+            }
+            else if (ortalama >= 60 && ortalama < 85)
+            {
+                MessageBox.Show("BA/GECTI" + $" Ortalamasi:" + ortalama);
+            }
+            else if (ortalama > 85)
+            {
+                MessageBox.Show("AA/GECTI" + $" Ortalamasi:" + ortalama);
+            }
 
             //Kullanicidan vize ve final notlarinin girilmesini isteyiniz
             //Vizenin %30, finalin %70 ini alarak ortalama hesaplayiniz
@@ -74,11 +74,13 @@ namespace K06_KararYapilari
             // CC ve ustu harf notu gecer
             //KUllaniciya ortalamasini, harf notunu ve gecti/kaldi durumunu gosteriniz
 
-            
+
+
+
 
 
         }
 
-        
+
     }
 }

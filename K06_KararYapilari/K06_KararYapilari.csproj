@@ -58,22 +58,91 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IciceSwitchCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IciceSwitchCase.Designer.cs">
+      <DependentUpon>IciceSwitchCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapciSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapciSiparis.Designer.cs">
+      <DependentUpon>KitapciSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TurnerIf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TurnerIf.Designer.cs">
+      <DependentUpon>TurnerIf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunNerede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunNerede.Designer.cs">
+      <DependentUpon>UrunNerede.cs</DependentUpon>
+    </Compile>
     <Compile Include="NotHesaplama.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NotHesaplama.Designer.cs">
       <DependentUpon>NotHesaplama.cs</DependentUpon>
     </Compile>
+    <Compile Include="NotHesaplama2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotHesaplama2.Designer.cs">
+      <DependentUpon>NotHesaplama2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UrunNeredeHoca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunNeredeHoca.Designer.cs">
+      <DependentUpon>UrunNeredeHoca.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IciceSwitchCase.resx">
+      <DependentUpon>IciceSwitchCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapciSiparis.resx">
+      <DependentUpon>KitapciSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurnerIf.resx">
+      <DependentUpon>TurnerIf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunNerede.resx">
+      <DependentUpon>UrunNerede.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NotHesaplama.resx">
       <DependentUpon>NotHesaplama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotHesaplama2.resx">
+      <DependentUpon>NotHesaplama2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +153,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UrunNeredeHoca.resx">
+      <DependentUpon>UrunNeredeHoca.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
