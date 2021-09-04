@@ -102,14 +102,14 @@ namespace K07_Donguler
                 lstSonuc.Items.Add(i);
 
             }
-            /* for (int i = 'A'; i <= 'Z'; i++)
+            /* for (char i = 'A'; i <= 'Z'; i++)
              {  // arka tarafta buyuk A icin i nin degerini 65 alip sirasiyla Z ye kadar gidiyor
 
                  lstSonuc.Items.Add(i);
             Bu da ASCII karsiligini verir 
              } */
 
-            for (int i = 'A'; i <= 'Z'; i++)
+            for (char i = 'A'; i <= 'Z'; i++)
             {  // arka tarafta buyuk A icin i nin degerini 65 alip sirasiyla Z ye kadar gidiyor
 
                 lstSonuc.Items.Add($"sembol -> {i} ASCII -> {Convert.ToInt32(i)}");
@@ -166,8 +166,8 @@ namespace K07_Donguler
 
         private void btnOrnek8_Click(object sender, EventArgs e)
         {
-            // combobox in ismi dropdown 
-            //2000-2020 arasindaki yillari comboboxa yazdiralim, sonrasinda comboboxdan bir yil secelim ve textbox'da gosterelim
+                // combobox in ismi dropdown 
+                //2000-2020 arasindaki yillari comboboxa yazdiralim, sonrasinda comboboxdan bir yil secelim ve textbox'da gosterelim
             for(int i=2000; i <= 2020; i++)
             {
                 cmbYillar.Items.Add(i);// Herhangi bir veri tipini object tipine cevirdigimiz zaman  Boxing yapmis olursunuz.
@@ -185,7 +185,7 @@ namespace K07_Donguler
                  
                 //var secilenYil = Convert.ToInt32(cmbYillar.SelectedItem);  // boyle de yazabilirsin
                 //var secilenYil = Convert.ToString(cmbYillar.SelectedItem);// ok
-                //var secilenYil = Convert.ToBoolean(cmbYillar.SelectedItem);// Boyle bir donusum olamiyor.
+                //var secilenYil = Convert.ToBoolean(cmbYillar.SelectedItem);// Boyle bir donusum olamiyor.Cunku yil degeri bool degerine cevirilemez
 
             }
         }
@@ -237,6 +237,11 @@ namespace K07_Donguler
             {
                 lblYaziTahtasi.Text += "X ";
             } 
+        }
+
+        private void btnOrnek2_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

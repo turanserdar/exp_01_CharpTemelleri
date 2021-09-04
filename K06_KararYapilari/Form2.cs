@@ -113,7 +113,7 @@ namespace K06_KararYapilari
 
             if (kullaniciAdi == "admin"&& parola=="1234")
             {
-                MessageBox.Show("admin");
+                MessageBox.Show("Hosgeldin");
             }
             else if (kullaniciAdi != "admin"&& parola == "1234")
             {

@@ -75,6 +75,7 @@ namespace K07_Donguler
             this.btnOrnek2.TabIndex = 2;
             this.btnOrnek2.Text = "2. 100\'den 1\'e kadar sayilari ekle";
             this.btnOrnek2.UseVisualStyleBackColor = true;
+            this.btnOrnek2.Click += new System.EventHandler(this.btnOrnek2_Click_1);
             // 
             // btnOrnek3
             // 
@@ -196,7 +197,7 @@ namespace K07_Donguler
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(396, 23);
             this.button2.TabIndex = 15;
-            this.button2.Text = "Yanyana 10 tane x yazdiriniz";
+            this.button2.Text = "11.Yanyana 10 tane x yazdiriniz";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

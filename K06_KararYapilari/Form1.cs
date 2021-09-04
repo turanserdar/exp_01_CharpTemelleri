@@ -46,11 +46,34 @@ namespace K06_KararYapilari
         //-Suslu parantez ac kapat- kosul saglandigi zaman calisacak kodlar (kosulun true olmasi)
 
         // if (kosul){
-        
-                // kosul saglandigi zaman calisacak kodlar (kosulun true olmasi)
+
+        // kosul saglandigi zaman calisacak kodlar (kosulun true olmasi)
         // } 
 
         // Disaridan alinan bir degerin "nur" degerine esit olmasi durumunda calisan ve ekrana girilen deger NUR yazan uygulamayi yapalim. 
+
+        // Birden fazla else-if yazabilirsiniz Bunlardan hicbiri calismazsa bu sefer else blogu calisir
+
+        //if (kosul1)
+        //{
+        //    //Kosul 1 true ise calisir
+        //}
+        //else if (kosul2)
+        //{
+        //    //Kosul 2 true ise calisir
+        //}
+        //else if (kosul3)
+        //{
+        //    //Kosul 3 true ise calisir
+        //}
+        //else if (kosul3)
+        //{
+        //    //Kosul 3 true ise calisir
+        //}
+        //else  
+        //{
+        //    //Hic bir kosul saglanmadiginda calisir
+        //}
 
         /* Karsilastirma operaotrler
         == 
@@ -68,7 +91,7 @@ namespace K06_KararYapilari
          
 
         */
-private void btnTikla_Click(object sender, EventArgs e)
+        private void btnTikla_Click(object sender, EventArgs e)
         {
             // Disaridan alinan bir degerin "nur" degerine esit olmasi durumunda calisan ve ekrana girilen deger NUR yazan uygulamayi yapalim.
 
@@ -104,8 +127,8 @@ private void btnTikla_Click(object sender, EventArgs e)
 
         private void btnGectiKaldi_Click(object sender, EventArgs e)
         {
-            /// Kullanicidan alinan sayi 0-50 arasinda ise kaldiniz; 50-100 arasinda ise gectiniz,bunlar disinda bir sey girilmisse uygun aralikta deger girmediniz yazdiralim
-            /// 
+         
+
             // Birden fazla else-if yazabilirsiniz Bunlardan hicbiri calismazsa bu sefer else blogu calisir
 
             //if (kosul1)
@@ -128,7 +151,6 @@ private void btnTikla_Click(object sender, EventArgs e)
             //{
             //    //Hic bir kosul saglanmadiginda calisir
             //}
-
             /// Kullanicidan alinan sayi 0-50 arasinda ise kaldiniz; 50-100 arasinda ise gectiniz,bunlar disinda bir sey girilmisse uygun aralikta deger girmediniz yazdiralim
             /// 
             //var girilenDeger = txtNot.Text;//txtNot class tir text bu class in icinde tanimlanmistir

@@ -1,7 +1,7 @@
 ﻿
 namespace K06_KararYapilari
 {
-    partial class Form4
+    partial class KitapciSiparisBen
     {
         /// <summary>
         /// Required designer variable.

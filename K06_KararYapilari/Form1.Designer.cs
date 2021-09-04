@@ -91,7 +91,6 @@ namespace K06_KararYapilari
             this.txtNot.Name = "txtNot";
             this.txtNot.Size = new System.Drawing.Size(100, 20);
             this.txtNot.TabIndex = 5;
-     
             // 
             // txtSayi
             // 
@@ -116,7 +115,7 @@ namespace K06_KararYapilari
             this.btnTekCift.Name = "btnTekCift";
             this.btnTekCift.Size = new System.Drawing.Size(100, 23);
             this.btnTekCift.TabIndex = 8;
-            this.btnTekCift.Text = "Tek/Cifts";
+            this.btnTekCift.Text = "Tek/Cift Mi?";
             this.btnTekCift.UseVisualStyleBackColor = true;
             // 
             // Form1

@@ -22,10 +22,12 @@ namespace K06_KararYapilari
             //Application.Run(new NotHesaplama2());
             //Application.Run(new Form3());
             //Application.Run(new UrunNeredeHoca());
-            //Application.Run(new Form4());
+            ////Application.Run(new Form4());
+            //Application.Run(new KitapciSiparis());
             //Application.Run(new Form5());
-            //Application.Run(new Form6());
-            Application.Run(new TurnerIf());
+
+            //Application.Run(new TurnerIf());
+            Application.Run(new __IcIceSwitchCase());
         }
     }
 }

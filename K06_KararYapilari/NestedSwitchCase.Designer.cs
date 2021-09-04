@@ -1,7 +1,7 @@
 ﻿
 namespace K06_KararYapilari
 {
-    partial class Form6
+    partial class _icice_NestedSwitchCase
     {
         /// <summary>
         /// Required designer variable.
@@ -29,67 +29,67 @@ namespace K06_KararYapilari
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnGiris = new System.Windows.Forms.Button();
+            this.txtParola = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
-            this.txtParola = new System.Windows.Forms.TextBox();
-            this.btnGiris = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // btnGiris
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Kullanici Adiniz";
+            this.btnGiris.Location = new System.Drawing.Point(282, 212);
+            this.btnGiris.Name = "btnGiris";
+            this.btnGiris.Size = new System.Drawing.Size(75, 22);
+            this.btnGiris.TabIndex = 9;
+            this.btnGiris.Text = "Giris";
+            this.btnGiris.UseVisualStyleBackColor = true;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
+            // 
+            // txtParola
+            // 
+            this.txtParola.Location = new System.Drawing.Point(257, 152);
+            this.txtParola.Name = "txtParola";
+            this.txtParola.Size = new System.Drawing.Size(100, 20);
+            this.txtParola.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(95, 210);
+            this.label2.Location = new System.Drawing.Point(139, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 7;
             this.label2.Text = "Parolaniz";
             // 
             // txtKullaniciAdi
             // 
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(227, 94);
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(257, 107);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(100, 20);
-            this.txtKullaniciAdi.TabIndex = 2;
+            this.txtKullaniciAdi.TabIndex = 6;
             // 
-            // txtParola
+            // label3
             // 
-            this.txtParola.Location = new System.Drawing.Point(227, 210);
-            this.txtParola.Name = "txtParola";
-            this.txtParola.Size = new System.Drawing.Size(100, 20);
-            this.txtParola.TabIndex = 3;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(139, 107);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Kullanici Adiniz";
             // 
-            // btnGiris
-            // 
-            this.btnGiris.Location = new System.Drawing.Point(227, 276);
-            this.btnGiris.Name = "btnGiris";
-            this.btnGiris.Size = new System.Drawing.Size(100, 23);
-            this.btnGiris.TabIndex = 4;
-            this.btnGiris.Text = "Giris";
-            this.btnGiris.UseVisualStyleBackColor = true;
-            this.btnGiris.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Form6
+            // _icice_NestedSwitchCase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.txtParola);
-            this.Controls.Add(this.txtKullaniciAdi);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "Form6";
-            this.Text = "Form6";
+            this.Controls.Add(this.txtKullaniciAdi);
+            this.Controls.Add(this.label3);
+            this.Name = "_icice_NestedSwitchCase";
+            this.Text = "_icice_NestedSwitchCase";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,10 +97,10 @@ namespace K06_KararYapilari
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGiris;
+        private System.Windows.Forms.TextBox txtParola;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtKullaniciAdi;
-        private System.Windows.Forms.TextBox txtParola;
-        private System.Windows.Forms.Button btnGiris;
+        private System.Windows.Forms.Label label3;
     }
 }

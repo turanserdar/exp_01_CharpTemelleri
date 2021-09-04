@@ -8,19 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace K06_KararYapilari
+namespace NestedSwitchCase_icice_
 {
-    public partial class Form6 : Form
+    public partial class Form1 : Form
     {
-        public Form6()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnGiris_Click(object sender, EventArgs e)
         {
-            //Kullanici adi admin ve sifre 1234 ise giris basarili uyarisi verilsin
-
+            // Kullanici adi admin ve sifre 1234 ise giris basarili uyarisi verilsin
+            
             var kullaniciAdi = txtKullaniciAdi.Text;
             var parola = txtParola.Text;
 
@@ -44,10 +44,6 @@ namespace K06_KararYapilari
                     MessageBox.Show("Kullanici adiniz yanlis oldugundan parolaniz kontrol bile edilemedi");
                     break;
             }
-
-
-
-
         }
     }
 }

@@ -45,9 +45,9 @@ namespace K06_KararYapilari
         {
             // Kullanicidan mevsimleri aldiktan sonra o mevsimdeki aylari gosteren bir uygulama yapiniz
 
-            //var girilenMevsim = txtMevsim.Text.ToLower();
+            var girilenMevsim = txtMevsim.Text.ToLower();
 
-            //var aylar = "";
+            var aylar = "";
 
             //1.YONTEM IF ILE YAPILMASI
             //if (girilenMevsim=="kis")
@@ -75,32 +75,32 @@ namespace K06_KararYapilari
             //2.YONTEM SWITCH_CASE DAHA HIZLI
 
 
-            //switch (girilenMevsim)//neyi karsilastiriyorsam buraya yaziyoruz
-            //{
-            //    case "kis": //karsilastirdigim sey
-            //        aylar = "aralik-ocak-subat";
-            //        break;
-            //    case "ilkbahar": //karsilastirdigim sey
-            //        aylar = "mart-nisan-mayis";
-            //        break;
-            //    case "yaz": //karsilastirdigim sey
-            //        aylar = "haziran-temmuz-agustos";
-            //        break;
-            //    case "sonbahar": //karsilastirdigim sey /// arama butonuna sonbahar dedigimizde direk olarak bu satira bakacak.
-            //        aylar = "eylul-ekim-kasim";
-            //        break;
+            switch (girilenMevsim)//neyi karsilastiriyorsam buraya yaziyoruz
+            {
+                case "kis": //karsilastirdigim sey
+                    aylar = "aralik-ocak-subat";
+                    break;
+                case "ilkbahar": //karsilastirdigim sey
+                    aylar = "mart-nisan-mayis";
+                    break;
+                case "yaz": //karsilastirdigim sey
+                    aylar = "haziran-temmuz-agustos";
+                    break;
+                case "sonbahar": //karsilastirdigim sey /// arama butonuna sonbahar dedigimizde direk olarak bu satira bakacak.
+                    aylar = "eylul-ekim-kasim";
+                    break;
 
-            //    default: // else karsilik geliyor       
-            //        aylar = "boyle bir mevsim yok!";
-            //        break;
+                default: // else karsilik geliyor       
+                    aylar = "boyle bir mevsim yok!";
+                    break;
 
-            //}
-
-
-            //MessageBox.Show(aylar);
+            }
 
 
-            
+            MessageBox.Show(aylar);
+
+
+
 
 
         }
