@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace K06_KararYapilari
 {
-    public partial class Form3 : Form
+    public partial class UrunNerede : Form
     {
-        public Form3()
+        public UrunNerede()
         {
             InitializeComponent();
         }
 
         private void txtUrun_TextChanged(object sender, EventArgs e)
         {
-            // Kullanicidan alinan urun bilgisine gore yonlendirilecek reyonu gosteren bir uygulama yapiniz.
-            // Bir markette oldugunuzu dusunun
-            //Bilgisayar, cep telefonu,minibook yazarsa teknoloji reyonuna ilerleyiniz.
-            // Parfum, deodorant, sampuan yazarsa kisisel bakim reyonu
-            // Domates, biber, patlican yazarsa sebze reyonu
-            // Bunlar disinda bir sey yazilirsa urun bulunmamaktadir bilgisi gosteren bir uygulama yapiniz
+                // Kullanicidan alinan urun bilgisine gore yonlendirilecek reyonu gosteren bir uygulama yapiniz.
+                // Bir markette oldugunuzu dusunun
+                //Bilgisayar, cep telefonu,minibook yazarsa teknoloji reyonuna ilerleyiniz.
+                // Parfum, deodorant, sampuan yazarsa kisisel bakim reyonu
+                // Domates, biber, patlican yazarsa sebze reyonu
+                // Bunlar disinda bir sey yazilirsa urun bulunmamaktadir bilgisi gosteren bir uygulama yapiniz
 
             
         }

@@ -63,8 +63,8 @@ namespace K07_Donguler
             //lstSonuc.Items.Add(1);
             // ...
             //lstSonuc.Items.Add(100);
-            
-             //Dongu ile yazarsak
+
+            //Dongu ile yazarsak
             for (int i = 1/*burasi bir defa calisacak*/; i <= 100; i++)
             {
 
@@ -125,7 +125,7 @@ namespace K07_Donguler
                 {
                     lstSonuc.Items.Add(i);
                 }
-               
+
             }
         }
 
@@ -139,9 +139,9 @@ namespace K07_Donguler
 
             for (int i = 1; i <= 10; i++)
             {
-                
+
                 toplam = toplam + i;
-                
+
             }
             MessageBox.Show(toplam.ToString());
         }
@@ -149,15 +149,15 @@ namespace K07_Donguler
         private void btnOrnek7_Click(object sender, EventArgs e)
         {
 
-           //7.10-30 arasindaki tek sayilarin toplamini bulunuz.
-           // artis miktari ile degil, if ile yapiniz
+            //7.10-30 arasindaki tek sayilarin toplamini bulunuz.
+            // artis miktari ile degil, if ile yapiniz
             var toplam = 0;
             for (int i = 10; i <= 30; i++)
             {
-                if (i%2==1)
+                if (i % 2 == 1)
                 {
                     lstSonuc.Items.Add(i);
-                    toplam +=i;
+                    toplam += i;
                 }
 
             }
@@ -166,9 +166,9 @@ namespace K07_Donguler
 
         private void btnOrnek8_Click(object sender, EventArgs e)
         {
-                // combobox in ismi dropdown 
-                //2000-2020 arasindaki yillari comboboxa yazdiralim, sonrasinda comboboxdan bir yil secelim ve textbox'da gosterelim
-            for(int i=2000; i <= 2020; i++)
+            // combobox in ismi dropdown 
+            //2000-2020 arasindaki yillari comboboxa yazdiralim, sonrasinda comboboxdan bir yil secelim ve textbox'da gosterelim
+            for (int i = 2000; i <= 2020; i++)
             {
                 cmbYillar.Items.Add(i);// Herhangi bir veri tipini object tipine cevirdigimiz zaman  Boxing yapmis olursunuz.
                 // belirsiz bir veri tipi olur// Bilincli bir sekilde cevirmiyorsunuz. Siz Item lara veri eklemek istediginiz zaman otomatikmen object veri tipine donusturur.
@@ -177,12 +177,12 @@ namespace K07_Donguler
 
         private void cmbYillar_SelectedIndexChanged(object sender, EventArgs e)// SelectedIndexChanged bu event secilen deger calistirildigi zaman calisir// comboboxtan veri secimi yapmak icin
         {
-            if (cmbYillar.SelectedIndex!= -1) // herhangi bir secim yapilmadigi zaman -1 geliyor. // Selected index degeri herhangi bir secim olmazsa otomatik olarak -1 degerini alir
-                // 2000 nin indeksi 0 dan basliyor . Burada indexlerimizin hic biri -1 olamayacagi icin dongunun icine giriyor
+            if (cmbYillar.SelectedIndex != -1) // herhangi bir secim yapilmadigi zaman -1 geliyor. // Selected index degeri herhangi bir secim olmazsa otomatik olarak -1 degerini alir
+                                               // 2000 nin indeksi 0 dan basliyor . Burada indexlerimizin hic biri -1 olamayacagi icin dongunun icine giriyor
             {
                 var secilenYil = cmbYillar.SelectedItem;  // Unboxing // diyelim ki 2000 yilini sectik o yuzden selectedItem dedik
                 txtSecilenYil.Text = secilenYil.ToString();
-                 
+
                 //var secilenYil = Convert.ToInt32(cmbYillar.SelectedItem);  // boyle de yazabilirsin
                 //var secilenYil = Convert.ToString(cmbYillar.SelectedItem);// ok
                 //var secilenYil = Convert.ToBoolean(cmbYillar.SelectedItem);// Boyle bir donusum olamiyor.Cunku yil degeri bool degerine cevirilemez
@@ -201,7 +201,7 @@ namespace K07_Donguler
             for (int i = 1; i <= 10; i++)
             {
 
-                
+
                 var sayi = rnd2.Next(1, 51);
 
                 lstSonuc.Items.Add(sayi);
@@ -214,7 +214,7 @@ namespace K07_Donguler
 
         private void lstSonuc_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -223,9 +223,9 @@ namespace K07_Donguler
 
             for (int i = 1; i <= 10; i++)
             {
-                for (int j = 1; j <=10 ; j++)
+                for (int j = 1; j <= 10; j++)
                 {
-                    lstSonuc.Items.Add($"{i}x{j}={i*j}");
+                    lstSonuc.Items.Add($"{i}x{j}={i * j}");
                 }
             }
         }
@@ -236,12 +236,119 @@ namespace K07_Donguler
             for (int i = 0; i < 10; i++)
             {
                 lblYaziTahtasi.Text += "X ";
-            } 
+            }
         }
 
         private void btnOrnek2_Click_1(object sender, EventArgs e)
         {
 
         }
+
+        private void btnKare_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= 9; i++)
+            {
+
+                lblYaziTahtasi.Text += "X";
+                for (int j = 0; j <= 9; j++)
+                {
+                    lblYaziTahtasi.Text += "X";
+                }
+
+
+
+            }
+        }
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+
+            // 3 tane kesen veya atlatan komutlar var
+            // Continue
+            // Break
+            // Return
+
+
+            /* 1.CONTINUE   
+                
+            dongude bazi durumlarda o anki iterasyonun atlanip sonraki iterasyonlardan devam etmesini saglar
+            
+            1'den 30' a kadar ki sayilari ekrana yazdirmak istiyoruz ancak 8'in kati olan sayilarin yazilmasini istemiyoruz.
+            arada bir kosul var 8'in kati olanlari yazdirmasini istemiyoruz.   */
+
+
+            for (int i = 1; i <= 30; i++)
+            {
+                //burada bir kosul yazmak istedigim zaman if kullaniyordum.
+                if (i % 8 == 0)
+                {
+                    continue;//bunu gordugu icin burayi isletmyecek 8 i gordu yazmadi, 16 yi gordu yazmadi, 24 u gordu yazmadi.
+                    // Continue gorunce alttaki add kismini calistirmadan direk for'a donuyor. Direk donguyu kesip basa donuyor. O anki iterasyonu calistirmayacak.// Genellikle bir kosula bagli olarak kosul saglandigi zaman onu atlasin istiyoruz. While dongusunde birseyler donuyor sonuc ariyoruz. Bilge adam da bahar kaydini ariyoruz. Kacinci iterasyonda bahari gorunce duracagini bu sekilde belirleyebiliriz. O ankini isletme ama bi sonrakinden devam et demek.
+                }
+                lstSonuc.Items.Add(i);
+
+            }
+
+
+
+        }
+
+        private void btnBreak_Click(object sender, EventArgs e)
+        {
+            // Break Komutu
+            // Belli bir kosul saglandiginda dongunun calismasini durdurmak icin Break kullanilir. Donguyu kiriyor. Continue donguyu atlatiyordu. Sadece o iterasyonu gostermiyor. Break direk donguden cikiyor
+            // Donguden ciktiktan sonra kodlar varsa bunlar calisir cunku break komutu sadece dongunun sonlanmasini saglar. Mbox da goruldugu gibi break donguyu sonlandirdi ama mbox calisti.
+
+            // 1-30 arasindaki sayilari yazdiriniz. 4 un kati olan ilk sayiyi buldugu zaman donguden cikilsin.
+
+            for (int i = 1; i <= 30; i++)
+            {
+
+                if (i % 4 == 0)
+                {
+                    lstSonuc.Items.Add(i);
+                    break;
+                }
+                lstSonuc.Items.Add(i);
+            }
+            MessageBox.Show("Dongu Sonlandi. Mesaj kutusu acildi.");
+
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            // Return komutu donguden ve icinde bulunulan metottan cikilmasi icin kullanilir. Donguden sonra kod parcalari varsa bunlar calismaz.
+            // Donguden cikilmasini veya metottan da cikilmasini saglar.
+
+            for (int i = 1; i <= 30; i++)
+            {
+
+                if (i %4==0)
+                {
+                    return;
+                }
+
+                lstSonuc.Items.Add(i);
+            }
+
+            MessageBox.Show("Dongu Sonlandi. Mesaj Kutusu Acilmayacak ve Buradaki Mesaj Gorunmeyecek."); // i%4 == 0 oldugunda hic buraya ugramayacak// Buradaki mesaj kutusu gorulmeyecek
+
+
+
+        }// i%4 == 0 oldugunda direk olarak buraya gelecek
+
+        private void btnOrnek16_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i <=10;i++)
+            {
+                lblYaziTahtasi.Text = "X";
+                for (int j = 1; j <= 10; j++)
+                {
+                    lblYaziTahtasi.Text += "X";
+                }
+            }
+        }
     }
 }
+
+// Continue, Break ve Return de anlatilan her sey butun dongulerde gecerlidir.

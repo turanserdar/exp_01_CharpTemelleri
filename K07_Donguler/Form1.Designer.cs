@@ -46,6 +46,11 @@ namespace K07_Donguler
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.lblYaziTahtasi = new System.Windows.Forms.Label();
+            this.btnKare = new System.Windows.Forms.Button();
+            this.btnContinue = new System.Windows.Forms.Button();
+            this.btnBreak = new System.Windows.Forms.Button();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.btnOrnek16 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstSonuc
@@ -209,11 +214,66 @@ namespace K07_Donguler
             this.lblYaziTahtasi.Size = new System.Drawing.Size(0, 13);
             this.lblYaziTahtasi.TabIndex = 16;
             // 
+            // btnKare
+            // 
+            this.btnKare.Location = new System.Drawing.Point(71, 361);
+            this.btnKare.Name = "btnKare";
+            this.btnKare.Size = new System.Drawing.Size(396, 23);
+            this.btnKare.TabIndex = 17;
+            this.btnKare.Text = "12. X \' lerden Kare Yapma";
+            this.btnKare.UseVisualStyleBackColor = true;
+            this.btnKare.Click += new System.EventHandler(this.btnKare_Click);
+            // 
+            // btnContinue
+            // 
+            this.btnContinue.Location = new System.Drawing.Point(71, 390);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(396, 23);
+            this.btnContinue.TabIndex = 18;
+            this.btnContinue.Text = "13.Continue";
+            this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
+            // 
+            // btnBreak
+            // 
+            this.btnBreak.Location = new System.Drawing.Point(758, 200);
+            this.btnBreak.Name = "btnBreak";
+            this.btnBreak.Size = new System.Drawing.Size(136, 23);
+            this.btnBreak.TabIndex = 19;
+            this.btnBreak.Text = "14.Break";
+            this.btnBreak.UseVisualStyleBackColor = true;
+            this.btnBreak.Click += new System.EventHandler(this.btnBreak_Click);
+            // 
+            // btnReturn
+            // 
+            this.btnReturn.Location = new System.Drawing.Point(758, 229);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(136, 23);
+            this.btnReturn.TabIndex = 20;
+            this.btnReturn.Text = "15.Return";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // btnOrnek16
+            // 
+            this.btnOrnek16.Location = new System.Drawing.Point(758, 258);
+            this.btnOrnek16.Name = "btnOrnek16";
+            this.btnOrnek16.Size = new System.Drawing.Size(136, 23);
+            this.btnOrnek16.TabIndex = 21;
+            this.btnOrnek16.Text = "16.X\'ler kare";
+            this.btnOrnek16.UseVisualStyleBackColor = true;
+            this.btnOrnek16.Click += new System.EventHandler(this.btnOrnek16_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(947, 450);
+            this.Controls.Add(this.btnOrnek16);
+            this.Controls.Add(this.btnReturn);
+            this.Controls.Add(this.btnBreak);
+            this.Controls.Add(this.btnContinue);
+            this.Controls.Add(this.btnKare);
             this.Controls.Add(this.lblYaziTahtasi);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -257,6 +317,11 @@ namespace K07_Donguler
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblYaziTahtasi;
+        private System.Windows.Forms.Button btnKare;
+        private System.Windows.Forms.Button btnContinue;
+        private System.Windows.Forms.Button btnBreak;
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.Button btnOrnek16;
     }
 }
 

@@ -1,7 +1,7 @@
 ﻿
 namespace K06_KararYapilari
 {
-    partial class Form3
+    partial class UrunNerede
     {
         /// <summary>
         /// Required designer variable.

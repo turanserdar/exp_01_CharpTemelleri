@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DongulerDeneme
+namespace k08_Diziler
 {
     static class Program
     {
@@ -16,10 +16,9 @@ namespace DongulerDeneme
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new btnOrnek5());
-            //Application.Run(new Deneme2());
-            //Application.Run(new deneme3());
-            Application.Run(new deneme3());
+            //Application.Run(new Form1());
+            Application.Run(new Ornekler());
+            //Application.Run(new Ornekler8());
         }
     }
 }

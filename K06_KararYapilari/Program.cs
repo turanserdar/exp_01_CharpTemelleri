@@ -27,7 +27,8 @@ namespace K06_KararYapilari
             //Application.Run(new Form5());
 
             //Application.Run(new TurnerIf());
-            Application.Run(new __IcIceSwitchCase());
+            //Application.Run(new __IcIceSwitchCase());
+            Application.Run(new UrunNerede());
         }
     }
 }
