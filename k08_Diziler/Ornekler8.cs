@@ -26,7 +26,92 @@ namespace k08_Diziler
             // Her bir karakter char tipinde charlarin ASCII
             // ASCII tablosunda Turkce karakterler yok biz basit olmasi acisindan Turkce karakterlere gore yapiyoruz
 
-           
+            var sifre = txtSifre.Text;
+            var sifreTekrar = txtSifreTekrar.Text;
+
+            //1.Kontrol
+            if (sifre!=sifreTekrar)
+            {
+                MessageBox.Show("Sifreler Birbiri ile Uyusmuyor!");
+                return;
+            }
+
+            //2.Kontrol
+
+            if (sifre.Length<8)
+            {
+                MessageBox.Show("Sifrenizin Uzunlugu En az 8 Karakter Olmalidir");
+                return;
+            }
+            if (sifre.Contains(' '))
+            {
+                MessageBox.Show("Bosluk Kullanamazsiniz");
+            }
+
+
+            //3.Kontrol 
+            var buyukHarfVarMi = false;
+            var kucukHarfVarMi = false;
+            var rakamVarMi = false;
+            var sembolVarMi = false;
+
+
+            foreach (var karakter in sifre)
+            {
+                if (karakter>='A'&&karakter<='Z')
+                {
+                    //Karakter Buyuk Harftir
+                    buyukHarfVarMi = true;
+                }
+
+                if (karakter<='a'&&karakter>='z')
+                {
+                    //karakter kucuk harftir
+                    kucukHarfVarMi = true;
+                }
+
+                if (karakter>='0'&&karakter<='9')
+                {
+                    //Karakter Rakamdir
+                    rakamVarMi = true;
+                }
+                if (karakter>='!'&&karakter<='/')
+                {
+                    //Karakter Semboldur
+                    sembolVarMi = true;
+                }
+
+            }
+
+            if (buyukHarfVarMi&&kucukHarfVarMi&&rakamVarMi&&sembolVarMi)
+            {
+                MessageBox.Show("Sifreniz Guclu, Kayit Ediliyor");
+            }
+            else
+            {
+                if (!buyukHarfVarMi)
+                {
+                    MessageBox.Show("En az bir buyuk harf kullanmalisiniz.");
+                }
+                if (!kucukHarfVarMi)
+                {
+                    MessageBox.Show("En az bir kucuk harf kullanmalisiniz");
+                }
+                if (!rakamVarMi)
+                {
+                    MessageBox.Show("En az bir rakam kullanmalisiniz");
+                }
+                if (!sembolVarMi)
+                {
+                    MessageBox.Show("En az bir sembol kullanmalisiniz");
+                }
+            }
+
+
+
+
+
+
             
         }
     }

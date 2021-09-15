@@ -19,11 +19,18 @@ namespace K06_KararYapilari
 
         private void btnUrunNerede_Click(object sender, EventArgs e)
         {
+            ///// Kullanicidan alinan urun bilgisine gore yonlendirilecek reyonu gosteren bir uygulama yapiniz.
+            // Bir markette oldugunuzu dusunun
+            //Bilgisayar, cep telefonu,minibook yazarsa teknoloji reyonuna ilerleyiniz.
+            // Parfum, deodorant, sampuan yazarsa kisisel bakim reyonu
+            // Domates, biber, patlican yazarsa sebze reyonu
+            // Bunlar disinda bir sey yazilirsa urun bulunmamaktadir bilgisi gosteren bir uygulama yapiniz
+
             var girilenUrunAdi = txtUrunAdi.Text.ToLower();// Kullanici kucukte buyukte girse kucultur
             string reyonBilgisi; // bos bir degisken atiyorum
             if (girilenUrunAdi=="bilgisayar"||girilenUrunAdi=="cep telefonu"|| girilenUrunAdi=="minibook")
             {
-                reyonBilgisi = "Bilgisyaar reyonuna ilerleyiniz";
+                reyonBilgisi = "Teknoloji reyonuna ilerleyiniz";
             }
             else if (girilenUrunAdi=="parfum"||girilenUrunAdi=="deodorant"||girilenUrunAdi=="sampuan")
             {

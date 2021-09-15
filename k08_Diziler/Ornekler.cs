@@ -172,7 +172,7 @@ namespace k08_Diziler
         // Sayilar dizisi olusturalim 7 tane sayi eklensin (rastgele sayilar olusturulsun)
         // Butona her bastigimda dizideki elemanlari listeye eklesin ve eklenen sayilarin toplami formun basliginda gosterilsin
 
-        /// var rastgeleSayilar = new int[7]; // var diye bir degisken sinif duzeyinde tanimlanamaz. Yani global
+        /// var rastgeleSayilar = new int[7]; // var diye bir degisken sinif duzeyinde tanimlanamaz. Yani global olarak var tanimlayamayiz
         int[] rastgeleSayilar = new int[7];
         private void button1_Click(object sender, EventArgs e)
         {
@@ -181,7 +181,7 @@ namespace k08_Diziler
 
             //for (int i = 0; i < 7; i++)
             //{
-            //    sa
+            //    
             //} BEnim yapmaya calistigim
 
 
@@ -205,13 +205,12 @@ namespace k08_Diziler
             //butona her bastigimda dizide elemanlari listeye eklesin ve eklenen sayilarin toplami formun basliginda gosterilsin
             if (sayac<rastgeleSayilar.Length)
             {
-
-           
+                
             var secilenEleman = rastgeleSayilar[sayac];
+                lstSonuc.Items.Add(secilenEleman);
 
-            
 
-            toplam += secilenEleman;
+                toplam += secilenEleman;
                 //this icinde bulundugunuz sinifi temsil eder.Yani burada Ornekler i temsil eder
                 this.Text = toplam.ToString();
                 sayac++;

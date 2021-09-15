@@ -19,7 +19,10 @@ namespace DongulerDeneme
             //Application.Run(new btnOrnek5());
             //Application.Run(new Deneme2());
             //Application.Run(new deneme3());
-            Application.Run(new deneme3());
+            //Application.Run(new deneme3());
+            //Application.Run(new OdevDeneme());
+            Application.Run(new Form5());
+
         }
     }
 }

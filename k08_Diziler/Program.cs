@@ -17,8 +17,8 @@ namespace k08_Diziler
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
-            Application.Run(new Ornekler());
-            //Application.Run(new Ornekler8());
+            //Application.Run(new Ornekler());
+            Application.Run(new Ornekler8());
         }
     }
 }

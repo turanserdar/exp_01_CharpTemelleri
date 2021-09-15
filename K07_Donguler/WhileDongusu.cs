@@ -68,7 +68,7 @@ namespace K07_Donguler
 
             // Rastgele sayi uretmek icin bir random sinifimiz var onu olusturuyoruz.
 
-            Random rnd = new Random();
+            //Random rnd = new Random();
 
 
             //for (int i = 1; i < 10; i++)
@@ -83,6 +83,7 @@ namespace K07_Donguler
 
             // listbox'in icinde kesin olarak 10 tane rastgele sayi olmasini istiyoruz
             // bu dongu kac kez dondu? saydirip mesaj box da gosteriniz.
+            Random rnd = new Random();
             lstSonuc.Items.Clear(); // Her basista listbox in icini silsin
 
             int sayac = 0;

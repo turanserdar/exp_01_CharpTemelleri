@@ -31,6 +31,8 @@ namespace DongulerDeneme
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnRastgeleSayilarOlustur = new System.Windows.Forms.Button();
+            this.btnTopla = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -51,11 +53,32 @@ namespace DongulerDeneme
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnRastgeleSayilarOlustur
+            // 
+            this.btnRastgeleSayilarOlustur.Location = new System.Drawing.Point(22, 52);
+            this.btnRastgeleSayilarOlustur.Name = "btnRastgeleSayilarOlustur";
+            this.btnRastgeleSayilarOlustur.Size = new System.Drawing.Size(182, 23);
+            this.btnRastgeleSayilarOlustur.TabIndex = 2;
+            this.btnRastgeleSayilarOlustur.Text = "Rastgele Sayilar";
+            this.btnRastgeleSayilarOlustur.UseVisualStyleBackColor = true;
+            this.btnRastgeleSayilarOlustur.Click += new System.EventHandler(this.btnRastgeleSayilarOlustur_Click);
+            // 
+            // btnTopla
+            // 
+            this.btnTopla.Location = new System.Drawing.Point(210, 52);
+            this.btnTopla.Name = "btnTopla";
+            this.btnTopla.Size = new System.Drawing.Size(188, 23);
+            this.btnTopla.TabIndex = 3;
+            this.btnTopla.Text = "Dizideki Elemanlari Topla";
+            this.btnTopla.UseVisualStyleBackColor = true;
+            // 
             // deneme3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTopla);
+            this.Controls.Add(this.btnRastgeleSayilarOlustur);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Name = "deneme3";
@@ -68,5 +91,7 @@ namespace DongulerDeneme
 
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRastgeleSayilarOlustur;
+        private System.Windows.Forms.Button btnTopla;
     }
 }

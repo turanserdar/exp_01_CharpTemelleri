@@ -85,12 +85,7 @@ namespace K07_Donguler
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 10; i <= 50; i += 3)
-            {
-                //10'dan 50 ye 3'er 3'er artirarak yaziniz
-                lstSonuc.Items.Add(i);
-
-            }
+           
         }
 
         private void btnOrnek4_Click(object sender, EventArgs e)
